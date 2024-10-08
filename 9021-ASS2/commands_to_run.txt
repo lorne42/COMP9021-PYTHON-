@@ -1,0 +1,15 @@
+python3 -c 'from polygons import *; polys = Polygons("incorrect_1.txt")'
+python3 -c 'from polygons import *; polys = Polygons("incorrect_2.txt")'
+python3 -c 'from polygons import *; polys = Polygons("wrong_1.txt")'
+python3 -c 'from polygons import *; polys = Polygons("wrong_2.txt")'
+python3 -c 'from polygons import *; polys = Polygons("wrong_3.txt")'
+
+python3 -c "from polygons import *; polys = Polygons('polys_1.txt'); polys.analyse()"
+python3 -c "from polygons import *; polys = Polygons('polys_2.txt'); polys.analyse()"
+python3 -c "from polygons import *; polys = Polygons('polys_3.txt'); polys.analyse()"
+python3 -c "from polygons import *; polys = Polygons('polys_4.txt'); polys.analyse()"
+
+python3 -c 'from os import system; from polygons import *; polys = Polygons("polys_1.txt"); polys.display(); system("diff sol_polys_1.tex polys_1.tex; echo $?")'
+python3 -c 'from os import system; from polygons import *; polys = Polygons("polys_2.txt"); polys.display(); system("diff sol_polys_2.tex polys_2.tex; echo $?")'
+python3 -c 'from os import system; from polygons import *; polys = Polygons("polys_3.txt"); polys.display(); system("diff sol_polys_3.tex polys_3.tex; echo $?")'
+python3 -c 'from os import system; from polygons import *; polys = Polygons("polys_4.txt"); polys.display(); system("diff sol_polys_4.tex polys_4.tex; echo $?")'
